@@ -34,7 +34,7 @@ contract Product {
     emit ProductCreated(newProductId, name, productId, companyTrustyIdentifier);
   }
 
-  function getFacilityFromIdentifier(uint id) public view returns (string memory, string memory, string memory, string memory, address)
+  function getProductFromIdentifier(uint id) public view returns (string memory, string memory, string memory, string memory, address)
   {
     return (
       products[id].name,
